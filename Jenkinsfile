@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Testing Jenkins jobs using pipelines"
-                sh "bash test_cmd"
+                sh "mkdir /tmp/testDir"
                 echo "Complete."
             }
         }
